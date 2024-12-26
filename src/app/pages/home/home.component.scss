@@ -1,0 +1,81 @@
+nav {
+    background: #333;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+header {
+    background: #ff5722;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.hero {
+    position: relative;
+    background: url('https://example.com/india-hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.feature {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #ffebee;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.owl-carousel .img {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures images are cropped to fit */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual appeal */
+  }
+  .owl-carousel .owl-stage {
+  display: flex; /* Ensures images are aligned properly */
+  align-items: center;
+}
+@media (max-width: 768px) {
+    .owl-carousel .img {
+      height: 200px;
+    }
+  }
+  

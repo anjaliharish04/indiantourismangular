@@ -1,0 +1,113 @@
+.contact-us {
+    padding: 2rem 0;
+  
+    .header {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #666;
+      }
+    }
+  
+    .form-section {
+      margin-top: 2rem;
+  
+      form {
+        .form-group {
+          margin-bottom: 1.5rem;
+  
+          label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #555;
+          }
+  
+          input,
+          textarea {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+  
+            &:focus {
+              border-color: #007bff;
+              outline: none;
+              box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+            }
+          }
+        }
+      }
+  
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  
+    .contact-info {
+      margin-top: 2rem;
+  
+      p {
+        font-size: 1rem;
+        color: #666;
+  
+        strong {
+          color: #333;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+  
+      .form-section form .form-group {
+        margin-bottom: 1rem;
+      }
+  
+      button {
+        font-size: 1rem;
+      }
+    }
+    .map-section {
+        margin-top: 3rem;
+    
+        h2 {
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+        }
+    
+        .map-container {
+          position: relative;
+          overflow: hidden;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+          iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+  }
+  

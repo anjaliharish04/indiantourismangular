@@ -1,0 +1,25 @@
+<div class="container">
+    <app-carousel images="images"></app-carousel>
+  
+  </div>
+ <!-- Some content before carousel -->
+ <div class="text-center py-4">
+    <h2 class="display-4 text-primary">Explore Our Collection</h2>
+    <p class="lead text-muted">Browse through some of the most beautiful images</p>
+  </div>
+
+  <!-- Some content after carousel -->
+  <div class="text-center py-4">
+    <h3 class="text-primary">Discover More</h3>
+    <p class="text-muted">Delve into our latest offerings. We have much more in store for you!</p>
+    <owl-carousel-o [options]="customOptions">
+
+        <ng-container *ngFor="let slide of cimages">
+          <ng-template carouselSlide [id]="slide.id.toString()">
+            <img class="img" [src]="slide.src" [alt]="slide.alt">
+          </ng-template>
+        </ng-container>
+    
+      </owl-carousel-o>
+  </div>
+
